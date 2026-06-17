@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Frequency 2 IN 1 CALEN…(2)",
+  "Type": "Element",
+  "Id": "sCe7moe8F0SMHGHY3_5c1Q",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/sCe7moe8F0SMHGHY3_5c1Q",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/mzuAAxOdIU2IBOAXkz9qSA",
+  "Created": "2025-09-23T14:18:13.0533353Z",
+  "Updated": "2025-09-23T14:18:13.0533353Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

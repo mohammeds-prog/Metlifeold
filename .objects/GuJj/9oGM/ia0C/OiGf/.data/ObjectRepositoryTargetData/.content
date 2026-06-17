@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YhZO_L4TJEKJDFHQ6hX_vg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="00f29725-86a0-499a-97d3-10d260c4e2c6" CvElementArea="1540, 917, 340, 42" CvTextArea="1676, 930, 68, 14" CvTextArgument="End Chat" CvType="Button" DesignTimeRectangle="1541, 918, 338, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' /&gt;&lt;webctrl aaname='End Chat' tag='BUTTON' /&gt;" Guid="016af91c-ffac-4553-b1ea-d7a72c1556c0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="00f29725-86a0-499a-97d3-10d260c4e2c6" CvTextArea="1540, 841, 75, 15" CvTextArgument="End Chat" CvType="Text" DesignTimeRectangle="1541, 836, 338, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl tag='P' type='' class='end-chat-text end-chat-text-compact' aaname='End Chat' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='End Chat' /&gt;" Guid="e04638d5-97b4-47b2-9568-d7d810b6b241" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0eced6aedb9ad504efea4c685095ba43.png" xmlns="">0anJsgr54_ESpUR2Qa7nmPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

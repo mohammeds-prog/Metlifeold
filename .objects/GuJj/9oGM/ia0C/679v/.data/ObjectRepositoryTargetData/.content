@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="27yxAdYQdk6wlF-27ZpUJA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="5ac7bec3-c28d-4fa1-9019-e25070bfe721" CvType="AnyWordGroup" DesignTimeRectangle="977, 809, 285, 66" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='in-network-range-8' tableRow='10' tag='H6' /&gt;" Guid="264b85a8-7deb-4bf3-aaf5-4cf9392cc4f8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5ac7bec3-c28d-4fa1-9019-e25070bfe721" CvTextArea="342, 866, 437, 22" CvTextArgument="ORAL AND MAXILLOFACIAL SURGERY" CvType="Text" DesignTimeRectangle="344, 860, 601, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='unique-idabc-8' type='' tag='H6' class='mldc-text' aaname='ORAL AND MAXILLOFACIAL SURGERY' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ORAL AND MAXILLOFACIAL SURGERY' /&gt;" Guid="5c1d7fdd-e325-47fb-95aa-191f1cbe8442" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="36e307e371be82724c9f4ae330b8b132.png" xmlns="">0Ci4xYhjl_kSL9epHhPQM9Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

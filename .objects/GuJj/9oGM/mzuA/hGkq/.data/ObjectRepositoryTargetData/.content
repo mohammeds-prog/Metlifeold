@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="W14N_JmLak-VQCTA6GLLQA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="metdental.metlife.com/prov/execute/Rendering" CVScreenId="6f83985a-526a-4979-bfed-b6f2bbe83a1f" CvType="AnyWordGroup" DesignTimeRectangle="1688, 598, 33, 14" ElementType="Text" FuzzyAccuracy="0.1" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='reference-variable' type='' tag='SPAN' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ec4e8ad3-b1e9-45c7-860f-67d65f78e4b1" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plan Maximums and Deductibles' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6f83985a-526a-4979-bfed-b6f2bbe83a1f" CvTextArea="1597, 598, 123, 14" CvTextArgument="Plan benefit: 50%" CvType="Text" DesignTimeRectangle="1598, 596, 221, 20" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' class='' tag='LI' aaname='Plan benefit: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Plan benefit: 50%' /&gt;" Guid="e6eaa103-f0fe-4ff6-8f88-98ac77244bb5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3456a235cadb83383b78b13ce209ebe4.png" xmlns="">0kkUgI_5KlE-5pBQZGVVZLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

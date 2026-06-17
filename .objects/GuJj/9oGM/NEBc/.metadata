@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome MetDental",
+  "Type": "Screen",
+  "Id": "NEBcdayv-UeXjVlU0cXe_w",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/NEBcdayv-UeXjVlU0cXe_w",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/9oGMX5rAT0emhzj_jiWAHg",
+  "Created": "2025-10-02T13:58:47.0958907Z",
+  "Updated": "2025-10-02T13:58:47.0958907Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

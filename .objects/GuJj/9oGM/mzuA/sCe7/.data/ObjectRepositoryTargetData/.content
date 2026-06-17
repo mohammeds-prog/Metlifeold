@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3DhaDzk2AEaJhJaw8-YOPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="metdental.metlife.com/prov/execute/Rendering" DesignTimeRectangle="1616, 624, 221, 40" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;ul&amp;gt;li' idx='16' tag='LI' /&gt;" Guid="8936e13e-2a72-475c-b192-abfd2b44ab7c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plan Maximums and Deductibles' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3028f3ab30b9cffe48fe375e170aab8a.png" xmlns="">0YVIy3mlmG0qYCUkYY-gMkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

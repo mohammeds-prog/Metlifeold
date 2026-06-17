@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wgPoCJqoCkCNwiLZG9H2Ow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="9e1dbc5f-c41f-4e78-aa6e-9f8099fcdd1c" CvType="AnyWordGroup" DesignTimeRectangle="669, 752, 94, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl id='remaining-amount-annual' tag='H4' /&gt;" Guid="5a79d11a-054d-407b-9350-0cd6c970c055" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9e1dbc5f-c41f-4e78-aa6e-9f8099fcdd1c" CvTextArea="326, 663, 276, 28" CvTextArgument="Benefit Maximums" CvType="Text" DesignTimeRectangle="327, 655, 274, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='heading-Benefit Maximums' tag='H4' type='' class='mldc-text plan-coverage-details__heading' aaname='Benefit Maximums' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Benefit Maximums' /&gt;" Guid="b9047125-110c-4856-934c-60eb4e211121" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ab2f2167703966387ad8723b6c9edacf.png" xmlns="">0NMBTz10oK0qbdQ4otwLtKg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

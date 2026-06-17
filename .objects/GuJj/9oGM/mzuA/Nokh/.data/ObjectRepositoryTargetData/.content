@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rTSnLlfghUiYZC1eWj5EFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="metdental.metlife.com/prov/execute/Rendering" DesignTimeRectangle="1616, 624, 221, 40" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;ul&amp;gt;li' idx='154' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' class='' tag='LI' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="f25291e8-c41a-42af-8bb7-e0e19f736fe3" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plan Maximums and Deductibles' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c5d06375-f601-4479-9311-81604f82beba" CvTextArea="1614, 666, 164, 17" CvTextArgument="Age limit (if applicable):" CvType="Text" DesignTimeRectangle="1614, 666, 164, 17" ElementType="Text" Guid="7b9624d3-3b58-40eb-865f-4da87cff4de9" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7914e242a9c99610db2679e0dc33eb89.png" xmlns="">0uAgYWsyLA0KQhjSn6rJ4uQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

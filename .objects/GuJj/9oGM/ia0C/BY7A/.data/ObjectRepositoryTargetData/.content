@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EC2aVXZfBEKRluD3kImWDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="39054c4e-12cd-46fd-b116-91cc38589be2" CvType="AnyWordGroup" DesignTimeRectangle="1045, 486, 212, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='9' tag='P' /&gt;" Guid="484e8ee2-8028-437a-ae0a-a91478cbfa91" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="39054c4e-12cd-46fd-b116-91cc38589be2" CvTextArea="1044, 443, 126, 16" CvTextArgument="Employer / Group #" CvType="Text" DesignTimeRectangle="1045, 440, 212, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='details-title' type='' tag='P' aaname='Employer / Group #' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Employer / Group #' /&gt;" Guid="1c88f98c-c319-4112-854c-6c8cfc06a176" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="075f6353f18679d54aeb6f7f5c99a991.png" xmlns="">0azXs-T7jq0iO91YVStzZtw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

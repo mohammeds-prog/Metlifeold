@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UKTOUg_qK02256ShdybkgQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="82a67213-78f3-4b84-945b-ecd7e591e128" CvTextArea="493, 341, 90, 13" CvTextArgument="Plan Overview" CvType="Text" DesignTimeRectangle="327, 329, 422, 42" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='tab' tag='BUTTON' /&gt;" Guid="959ee4fc-1550-420f-8542-62c07ec10abc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="82a67213-78f3-4b84-945b-ecd7e591e128" CvElementArea="745, 329, 428, 42" CvTextArea="871, 341, 179, 13" CvTextArgument="Benefit &amp; Coverage Details" CvType="Button" DesignTimeRectangle="749, 329, 423, 42" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Benefit &amp;amp; Coverage Details' aria-role='tab' tag='BUTTON' type='' class='tab-item active' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Benefit &amp;amp; Coverage Details' /&gt;" Guid="4ed6a4d5-1ae9-4021-a343-b7fe745a44dd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="40432bc6da84984181c0a0d96ad1da6d.png" xmlns="">00fC0M63mG0aCE25vpLLOPA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

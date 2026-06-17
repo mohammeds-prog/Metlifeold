@@ -1,0 +1,14 @@
+﻿{
+  "Name": "PERIODONTICS(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "uKKCJ8a240Kh0FcrPLzagg",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/uKKCJ8a240Kh0FcrPLzagg",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/ia0CMi7p4kqHdGTtFopSvg",
+  "Created": "2026-01-29T19:35:29.8516853Z",
+  "Updated": "2026-01-29T19:35:29.8516853Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

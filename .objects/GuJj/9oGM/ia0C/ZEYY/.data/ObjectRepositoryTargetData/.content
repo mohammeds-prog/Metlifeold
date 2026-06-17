@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZSEu1Ohfn0S_7VS9hiHuhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" DesignTimeRectangle="1581, 594, 261, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' class='' isleaf='1' tag='P' aaname='Procedure code is not covered under this patient’s plan.' matching:class='fuzzy' fuzzylevel:class='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Procedure code is not covered under this patient’s plan.' /&gt;" Guid="e8f50dab-32bf-4cee-a978-86de325ff439" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c518e3ed-946e-4346-91a1-9e7b81da4639" CvTextArea="1540, 342, 178, 30" CvTextArgument="Y Hello, Need Help?" CvType="Text" DesignTimeRectangle="1517, 326, 386, 64" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' parentid='app' tag='DIV' class='header-menu header-menu-tiny' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='SettingsMaximizeMinimizeClose' /&gt;" Guid="8ba3ff81-2458-4c4c-8129-2a24fb7f6810" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0be458f646c907c8739f9a8d93bf7785.png" xmlns="">0JQszC7jUaEquAd19JGyFzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

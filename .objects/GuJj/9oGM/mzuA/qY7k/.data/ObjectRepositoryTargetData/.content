@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bXoYXcvpEUOIgHdgMxf96g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="metdental.metlife.com/prov/execute/Rendering" DesignTimeRectangle="1616, 644, 187, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='reference-variable' type='' tag='SPAN' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="080fe2d1-aa30-457b-9d72-97e44eda05a7" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plan Maximums and Deductibles' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b98bdb6c-85c3-4555-a8ee-5d5f7b82e50d" CvTextArea="1614, 706, 164, 17" CvTextArgument="Age limit (if applicable):" CvType="Text" DesignTimeRectangle="1614, 706, 164, 17" ElementType="Text" Guid="892414f4-22af-42c6-b5e4-ebca99ebe26d" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dc96aeac73798d4972e0b159da87a138.png" xmlns="">0wFpN3Pcbqk-TBGEyjAKx0A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

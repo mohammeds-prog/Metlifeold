@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="V00cavMhI0mPI1R8PbXFOw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="ac57f27e-cf21-4025-8198-8c55fd3f0382" CvElementArea="1785, 912, 101, 35" CvTextArea="1797, 923, 75, 13" CvTextArgument="Acknowledge" CvType="Button" DesignTimeRectangle="1786, 913, 98, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' /&gt;&lt;webctrl parentid='quick-reply-wrapper' tag='BUTTON' /&gt;" Guid="fcb867ff-5b80-49d6-9985-720889bf87d4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bb29a86f5bcfbff67f0db9ded5e7daec.png" xmlns="">0xOnhdVLPt0GvP99XWSAymg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

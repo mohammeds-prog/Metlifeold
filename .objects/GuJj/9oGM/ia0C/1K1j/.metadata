@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ORTHODONTICS",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "1K1jFeJ7PkGrq_uY_jjpsQ",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/1K1jFeJ7PkGrq_uY_jjpsQ",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/ia0CMi7p4kqHdGTtFopSvg",
+  "Created": "2026-01-29T19:36:24.8195399Z",
+  "Updated": "2026-01-29T19:36:24.8195399Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

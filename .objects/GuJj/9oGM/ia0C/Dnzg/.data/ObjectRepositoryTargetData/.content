@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="P7A-ERV9HEGTu4M0Njh8Rw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="7a6239bb-096f-4f5d-8851-b22aac5bbef3" CvType="AnyWordGroup" DesignTimeRectangle="977, 671, 285, 66" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='in-network-range-2' tableRow='4' tag='H6' /&gt;" Guid="14860739-966a-4501-a777-0c1294731e4a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7a6239bb-096f-4f5d-8851-b22aac5bbef3" CvTextArea="343, 680, 161, 22" CvTextArgument="RESTORATIVE" CvType="Text" DesignTimeRectangle="344, 674, 601, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='unique-idabc-2' type='' tag='H6' class='mldc-text' aaname='RESTORATIVE' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='RESTORATIVE' /&gt;" Guid="96ced6c0-56d1-4dd2-a293-a485eee6c880" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d04a67f94c163dfc39edbe6378400642.png" xmlns="">0l_OhMvDDr0eHVVCbnJzNsA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

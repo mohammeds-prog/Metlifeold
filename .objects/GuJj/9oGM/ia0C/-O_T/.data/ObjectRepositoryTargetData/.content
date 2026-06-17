@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FPI0NJ-jf0KfS1FjEnyj0A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="dc58cb05-3e4e-4fc6-8091-6903dca29ffa" CvType="AnyWordGroup" DesignTimeRectangle="669, 716, 69, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl id='remaining-amount-individual' tag='H4' /&gt;" Guid="cbc37216-17e3-4ce1-b09c-91488969506d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="dc58cb05-3e4e-4fc6-8091-6903dca29ffa" CvTextArea="326, 627, 178, 28" CvTextArgument="Deductibles" CvType="Text" DesignTimeRectangle="327, 619, 176, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='heading-Deductibles' tag='H4' type='' class='mldc-text plan-coverage-details__heading' aaname='Deductibles' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Deductibles' /&gt;" Guid="2dbda11c-4b8f-4ff2-990d-088903172f4c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c4c6b8b125b217ead0d21d170dc852fe.png" xmlns="">0_lDTptz4A0O2ztaoyRSQtg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

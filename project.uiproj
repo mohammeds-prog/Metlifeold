@@ -1,0 +1,6 @@
+{
+  "Name": "METLIFE",
+  "ProjectType": "Process",
+  "Description": "METLIFE",
+  "MainFile": "Main.xaml"
+}

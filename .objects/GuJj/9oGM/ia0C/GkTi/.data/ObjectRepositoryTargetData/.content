@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ji6tXJGlY0mVKPzztIXpBQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="e4a4452f-3f89-49f9-9c17-a1d5ae8ca4bf" CvType="AnyWordGroup" DesignTimeRectangle="1297, 552, 81, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl id='remaining-amount-lifetime' tag='H4' /&gt;" Guid="092e30b7-dc13-4f2a-a943-ea6a5f162c5f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e4a4452f-3f89-49f9-9c17-a1d5ae8ca4bf" CvElementArea="980, 586, 270, 65" CvType="InputBox" DesignTimeRectangle="1006, 597, 195, 44" FuzzySelectorArgument="&lt;webctrl class='combobox-container-content' parentid='dropdown-lifetime-combobox' tag='DIV' type='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Category&amp;#xA;Orthodontics' /&gt;" Guid="d34466f8-6073-47b4-8320-7c968d7aeb59" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ff3f7ff55a5426f57b744320632677a0.png" xmlns="">0hgFJT58mKk268WR_nGahGA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Frequency 1 IN 36 CONS…",
+  "Type": "Element",
+  "Id": "kG1mvDzLb0yPLy0KMYbxQg",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/kG1mvDzLb0yPLy0KMYbxQg",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/mzuAAxOdIU2IBOAXkz9qSA",
+  "Created": "2025-09-22T17:07:41.2149197Z",
+  "Updated": "2025-09-22T17:07:41.2149197Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="T0BSg9kOqUeRadUsd1AiNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="6c823de9-27c6-41b4-a141-e11288b513cf" CvElementArea="1565, 694, 323, 46" CvTextArea="1581, 709, 291, 18" CvTextArgument="Search by a procedure code, or category" CvType="Button" DesignTimeRectangle="1566, 695, 321, 44" ElementType="Button" FullSelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' /&gt;&lt;webctrl parentid='quick-reply-wrapper' tag='BUTTON' /&gt;" Guid="0166c44d-9657-4989-badb-f09b98457fd0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6c823de9-27c6-41b4-a141-e11288b513cf" CvElementArea="1747, 746, 141, 47" CvTextArea="1764, 760, 108, 18" CvTextArgument="Ask a question" CvType="Button" DesignTimeRectangle="1749, 747, 138, 44" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aaname='Ask a question' parentid='quick-reply-wrapper' tag='BUTTON' type='' class='quick-reply-button tab-focused-btn' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Ask a question' /&gt;" Guid="4e577d74-5fdf-4205-b795-1e1dfc810f0e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8a2d4ce27d233e8af8c88a8469165b0c.png" xmlns="">0yYMk0hcEZUyrKzxrh1HeOw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

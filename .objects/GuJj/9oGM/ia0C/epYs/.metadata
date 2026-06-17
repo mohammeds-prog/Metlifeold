@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Acknowledge",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "epYs_j0T5EO35UbZQKpD0w",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/epYs_j0T5EO35UbZQKpD0w",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/ia0CMi7p4kqHdGTtFopSvg",
+  "Created": "2025-10-31T13:40:33.881743Z",
+  "Updated": "2025-10-31T13:40:33.881743Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

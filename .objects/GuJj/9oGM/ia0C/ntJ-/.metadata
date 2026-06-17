@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Age limit (if applicabl…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ntJ-eLSX9kKcnUFdJwKkSg",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/ntJ-eLSX9kKcnUFdJwKkSg",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/ia0CMi7p4kqHdGTtFopSvg",
+  "Created": "2025-10-31T13:45:31.0973794Z",
+  "Updated": "2025-10-31T13:45:31.0973794Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

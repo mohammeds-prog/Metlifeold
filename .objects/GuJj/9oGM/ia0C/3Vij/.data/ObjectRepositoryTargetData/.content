@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RRf25M2NU0CVIX5Jbr-Qpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="9360e2aa-08d9-4cfb-bffe-82bb609e853a" CvType="AnyWordGroup" DesignTimeRectangle="1494, 624, 76, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl id='total-amount-lifetime' tag='H4' /&gt;" Guid="9224dc92-216b-43c7-b630-fc102fc61ff5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9360e2aa-08d9-4cfb-bffe-82bb609e853a" CvTextArea="1535, 649, 34, 13" CvTextArgument="total" CvType="Text" DesignTimeRectangle="1494, 646, 76, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='total-text-lifetime' tag='SPAN' type='' class='mldc-text plan-coverage-details__amount-text plan-coverage-details__text-right' aaname='total' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='total' /&gt;" Guid="16c48783-7294-4be1-a888-7219f64b8327" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e2f02097bfc3afc90b163344c37028e6.png" xmlns="">0aZ3orkNpvEeJnRq0CRdo2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

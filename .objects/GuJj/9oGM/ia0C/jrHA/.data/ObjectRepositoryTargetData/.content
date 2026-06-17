@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eIaAChIOf0OyTfiHS10GFg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="bcc807e7-a4a2-4c3e-9738-63864a47455f" CvType="AnyWordGroup" DesignTimeRectangle="1760, 758, 30, 11" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='reference-variable' type='' tag='SPAN' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="037910f8-5a37-4874-a180-4f5f8dc82924" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bcc807e7-a4a2-4c3e-9738-63864a47455f" CvTextArea="1692, 758, 97, 11" CvTextArgument="Plan benefit: 100%" CvType="Text" DesignTimeRectangle="1693, 754, 164, 18" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' class='' tag='LI' aaname='Plan benefit: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Plan benefit: 100%' /&gt;" Guid="4ad1c184-f4d2-484b-8b71-4f5e76c20cef" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bf15e5f04161154df53211d8be7d2174.png" xmlns="">0_GezD1PzLk-0AIIrhN_-SQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

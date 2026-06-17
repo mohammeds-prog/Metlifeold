@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xZmxIJU9C0CpilivlUNV8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="c0e1ef5b-dde9-4791-b1d9-45ee2e0cce99" CvElementArea="1739, 912, 77, 35" CvTextArea="1753, 923, 49, 11" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="1741, 913, 74, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' /&gt;&lt;webctrl aaname='Continue' parentid='quick-reply-wrapper' tag='BUTTON' /&gt;" Guid="bf6ff4e9-4620-4393-b82b-1cf326d56782" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c0e1ef5b-dde9-4791-b1d9-45ee2e0cce99" CvTextArea="1662, 773, 173, 13" CvTextArgument="I can show you coverage info for" CvType="Text" DesignTimeRectangle="1662, 773, 173, 13" ElementType="Text" Guid="27fdd135-443b-47e0-b4ad-2f12035e30f4" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="54dd1a6c2b06905fce37eaa5919f7aa2.png" xmlns="">0UHI3IUVDBE2N6Bm6UxoHAQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

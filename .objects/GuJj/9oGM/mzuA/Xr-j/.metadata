@@ -1,0 +1,13 @@
+﻿{
+  "Name": "responsibility",
+  "Type": "Element",
+  "Id": "Xr-jQIHgok-5FGtRPz2h1w",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/Xr-jQIHgok-5FGtRPz2h1w",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/mzuAAxOdIU2IBOAXkz9qSA",
+  "Created": "2025-09-22T16:54:18.5978373Z",
+  "Updated": "2025-09-22T16:54:18.5978373Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

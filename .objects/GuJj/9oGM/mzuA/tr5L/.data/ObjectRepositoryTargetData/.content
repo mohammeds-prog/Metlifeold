@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XUZOhL51oEGdZOutvyXKTg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="metdental.metlife.com/prov/execute/ProcedureSummary" DesignTimeRectangle="1616, 624, 221, 40" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='LI' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="db9de3e5-49ca-4255-9edc-fd64e740cb33" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plan Benefits - Summary' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1616, 508, 221, 40" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='LI' class='' aaname='Frequency: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Frequency: 2 IN 1 CALENDAR YEAR(S)' /&gt;" Guid="b917de0a-f1e1-4bdc-a9dd-6db728b3388d" SearchSteps="FuzzySelector" />
+          <Target CVScreenId="f746e606-58c6-431e-a76f-5ac850b4b91e" CvTextArea="19, 177, 97, 25" CvTextArgument="MetLife" CvType="Text" DesignTimeRectangle="8, 147, 120, 61" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="10c23dd8-1cae-4f52-b946-3e0dce2826d4" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2bd7c01adae025d29d052e84c96fa7fa.png" xmlns="">0Cb7jlryXGECHw7PygpMMVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

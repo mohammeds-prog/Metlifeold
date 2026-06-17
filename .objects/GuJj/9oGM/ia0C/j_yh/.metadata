@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Continue to enter proce…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "j_yh4kJCT0eXRgeVYEcwVA",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/j_yh4kJCT0eXRgeVYEcwVA",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/ia0CMi7p4kqHdGTtFopSvg",
+  "Created": "2026-04-21T19:13:57.4663485Z",
+  "Updated": "2026-04-21T19:13:57.4663485Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "DOB 09021978",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "jkopQ5p8mkW9L0tiixSgOw",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/jkopQ5p8mkW9L0tiixSgOw",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/ia0CMi7p4kqHdGTtFopSvg",
+  "Created": "2026-01-29T19:27:22.6319374Z",
+  "Updated": "2026-01-29T19:27:22.6319374Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hcxYQIjEd0CTACGDxPfbCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="metdental.metlife.com/prov/execute/Rendering" CVScreenId="8c2dfdc6-0002-4a85-a700-43dfbe248dac" CvElementArea="1510, 906, 355, 46" CvType="InputBox" DesignTimeRectangle="1511, 908, 353, 44" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='netomiChatWindow' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;" Guid="a8688c2e-5390-4199-aa04-892d9cf74856" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Plan Maximums and Deductibles' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d0cd0b704451a45f8aa8b8885b0bcc22.png" xmlns="">0TcdSgTtw5EK-HITZFnfeYw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

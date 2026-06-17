@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Deductibles",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "-O_TsXfVT0irQ8vkdcYUUw",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/-O_TsXfVT0irQ8vkdcYUUw",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/ia0CMi7p4kqHdGTtFopSvg",
+  "Created": "2026-01-29T19:22:20.754984Z",
+  "Updated": "2026-01-29T19:22:20.754984Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

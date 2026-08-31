@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ahlYbQSXQU6jFzJ_nimFhA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="5286a197-c451-4275-b3bf-dc3fb7ad0cbe" CvElementArea="558, 740, 626, 66" CvType="InputBox" DesignTimeRectangle="558, 742, 626, 64" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='input-group' parentid='app' tag='DIV' type='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d5cd63c4-2aa3-4b44-b1f0-edfa68fb5d7e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5286a197-c451-4275-b3bf-dc3fb7ad0cbe" CvElementArea="327, 741, 215, 65" CvType="InputBox" DesignTimeRectangle="327, 742, 215, 64" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='-combobox' tag='DIV' /&gt;" Guid="5743c182-defc-48f0-8560-3f36942b450a" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="32c03ecc8346c4cdbfe66e4a2e4ecf12.png" xmlns="">0Oh8MCgfWukuw9oPkLOAqdg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

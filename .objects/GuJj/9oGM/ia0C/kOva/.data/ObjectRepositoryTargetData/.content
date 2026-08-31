@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wZBCPalyeUiBycj_gUdjwQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="aed9fd3c-8a5c-4f41-9923-8d8ee3238701" CvElementArea="1198, 754, 134, 60" CvTextArea="1236, 776, 56, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1200, 757, 130, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' type='button' class='mldc-button search-procedure-form__search-btn primary blue primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Search' /&gt;" Guid="35f18125-d43d-4888-a242-f304b7d4e072" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="aed9fd3c-8a5c-4f41-9923-8d8ee3238701" CvTextArea="1350, 777, 46, 15" CvTextArgument="Reset" CvType="Text" DesignTimeRectangle="1352, 757, 43, 56" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Reset' parentid='app' tag='A' type='' class='search-procedure-form__link blue mldc-text-link' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Reset' /&gt;" Guid="26cf096f-0d7e-49d1-a9fc-4e903bc39997" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="363740b7759fba048f440bac8dfda514.png" xmlns="">0m_cWZmuCY0eNvkYwCy82jw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

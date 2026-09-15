@@ -147,8 +147,9 @@
       <AssemblyReference>METLIFE.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1299,19065" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1299,20305" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="patientCellMap" />
       <Variable x:TypeArguments="sd:DataTable" Name="newtable" />
       <Variable x:TypeArguments="x:String" Name="newFilePath" />
       <Variable x:TypeArguments="x:String" Name="downloadspath" />
@@ -216,13 +217,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome MetDental(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="802,4990" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome MetDental(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="802,6230" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="590,4740" sap2010:WorkflowViewState.IdRef="Sequence_61">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,5980" sap2010:WorkflowViewState.IdRef="Sequence_61">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="New_Freq1" />
               <Variable x:TypeArguments="x:String" Name="freqinfo1" />
@@ -237,7 +238,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGetText DisplayName="Get Text 'Active'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="556,190" sap2010:WorkflowViewState.IdRef="NGetText_32" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" TextString="[name]" Version="V5">
+            <uix:NGetText DisplayName="Get Text 'Active'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,190" sap2010:WorkflowViewState.IdRef="NGetText_32" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" TextString="[name]" Version="V5">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="00ef641e-1b46-418b-92b4-57aab1e8a4be" ContentHash="bYX1hu-kJk6vhd88gqCLSw" CvElementArea="568, 573, 29, 27" CvType="ArrowButton" DesignTimeRectangle="354, 572, 239, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" Guid="31332a02-4457-4903-b537-8c7853cbd162" InformativeScreenshot="815247d7e94df8d0ce110064dc17693d.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/KjdSQR5OhkqOYR-Y1QBhvw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -248,7 +249,40 @@
                 </uix:TargetAnchorable>
               </uix:NGetText.Target>
             </uix:NGetText>
-            <Assign sap:VirtualizedContainerService.HintSize="556,175" sap2010:WorkflowViewState.IdRef="Assign_30">
+            <uix:NGetText DisplayName="Get Text 'Start Date'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,190" sap2010:WorkflowViewState.IdRef="NGetText_33" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" TextString="[effective]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="b1c57581-321f-49da-94ed-7c9e4f1abbd8" ContentHash="xyjiBfLu_USiJkDQmwvKjA" CvType="AnyWordGroup" DesignTimeRectangle="772, 720, 212, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" Guid="c582d5e0-8b0a-4c96-beda-e900cde6919c" InformativeScreenshot="6ccd58db156681f73c1eb74fea3ca87a.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/bRegaenO5U-3TJrUPPDHIQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="b1c57581-321f-49da-94ed-7c9e4f1abbd8" CvTextArea="770, 699, 67, 13" CvTextArgument="Start Date" CvType="Text" DesignTimeRectangle="772, 696, 212, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='details-title' aaname='Start Date' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Start Date' /&gt;" Guid="745e45f3-b366-4feb-aac2-b5cef95fb298" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Employer / Group #'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,190" sap2010:WorkflowViewState.IdRef="NGetText_34" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" TextString="[groupname]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" ContentHash="XpPnkzja9EC_l6SWmlUs1g" DesignTimeRectangle="1045, 720, 212, 43" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='details-value bold' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="3982b8b5-9369-46ee-a478-295b3acdb4b9" ImageBase64="" InformativeScreenshot="eae76bc6f73f8bc7ece96a978a1b32e0.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/kgej63u_d0mW_w7O9BDFYg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="073874a9-591f-454e-bd81-882cb95beb0b" CvTextArea="1044, 698, 127, 18" CvTextArgument="Employer / Group #" CvType="Text" DesignTimeRectangle="1045, 696, 212, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='details-title' type='' tag='P' aaname='Employer / Group #' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Employer / Group #' /&gt;" Guid="5118b2c1-9021-4898-a4cc-d02a1068f73f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Employer / Group #'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,190" sap2010:WorkflowViewState.IdRef="NGetText_35" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" TextString="[groupno]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="aee12f79-2e87-4071-9d64-cf236d23292e" ContentHash="IB8qFnr-CU2xbDuPXBfqdg" CvType="AnyWordGroup" DesignTimeRectangle="1045, 763, 212, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='9' tag='P' /&gt;" Guid="8fcfc203-33c4-4fbe-95fc-2bc2007e81ed" InformativeScreenshot="f7f62ab1a003ea21323954feda0fc058.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/zCPJsyvHdEC73xt8ChrhgA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="aee12f79-2e87-4071-9d64-cf236d23292e" CvTextArea="1044, 698, 127, 18" CvTextArgument="Employer / Group #" CvType="Text" DesignTimeRectangle="1045, 696, 212, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='details-title' type='' tag='P' aaname='Employer / Group #' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Employer / Group #' /&gt;" Guid="fa149f74-9e6d-42eb-8ff8-debf1b8e3376" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_30">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[templatePath]</OutArgument>
               </Assign.To>
@@ -256,7 +290,7 @@
                 <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, ".templates", "FULL BOB TEMPLATE.xlsx")]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="556,175" sap2010:WorkflowViewState.IdRef="Assign_36">
+            <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_36">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[templatePath1]</OutArgument>
               </Assign.To>
@@ -264,7 +298,7 @@
                 <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, ".templates")]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="556,175" sap2010:WorkflowViewState.IdRef="Assign_32">
+            <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_32">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[downloadspath]</OutArgument>
               </Assign.To>
@@ -272,7 +306,7 @@
                 <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "FULL BOB TEMPLATE.xlsx")]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="556,175" sap2010:WorkflowViewState.IdRef="Assign_29">
+            <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_29">
               <Assign.To>
                 <OutArgument x:TypeArguments="scg:List(x:String)">[codeList1]</OutArgument>
               </Assign.To>
@@ -286,19 +320,19 @@
 }]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="556,2374" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[codeList1]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="520,1114" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[codeList1]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="554,2243" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,983" sap2010:WorkflowViewState.IdRef="Sequence_62">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Procedure Code(s)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Text="[currentText]" Version="V5">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Procedure Code(s)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Text="[currentText]" Version="V5">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="7143628a-7a07-427f-b1d0-31fd1e46eb08" ContentHash="PN66S1ch10aYz76m7pvRJw" CvElementArea="557, 640, 628, 66" CvType="InputBox" DesignTimeRectangle="558, 642, 626, 64" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='input-group' parentid='app' tag='DIV' type='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a8f2596d-9e68-4f7e-8a87-c0ab0425fe56" InformativeScreenshot="db179f647b5832f06e34154da90b6635.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/trrdraCghkCx2Svpurz_hg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -319,7 +353,7 @@
                         </uix:VerifyExecutionTypeIntoOptions>
                       </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,227" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V5">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="5d228808-08cd-4d55-b906-91a92ab791fa" ContentHash="9VuzySnah0qogoYbZGiWZA" CvElementArea="1198, 645, 134, 60" CvTextArea="1236, 666, 55, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1200, 647, 130, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' type='button' class='mldc-button search-procedure-form__search-btn primary blue primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Search' /&gt;" Guid="81fafebd-9694-4a5f-8f5f-2c683a0baae6" InformativeScreenshot="3388d95659a486bc2b3487900caee1ae.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/Jp6kqQhKfkeNCdtrB0ILhQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -340,17 +374,42 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NExtractData ContinueOnError="True" DataTable="[newtable]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Procedure Code' ReferenceIdx='0' Name='Procedure Code'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description of Services' ReferenceIdx='1' Name='Description of Services'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Frequency Limit' ReferenceIdx='2' Name='Frequency Limit'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Age Limit' ReferenceIdx='3' Name='Age Limit'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Late Date Of Service' ReferenceIdx='4' Name='Late Date Of Service'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Deductible' ReferenceIdx='5' Name='Deductible'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Network Fee' ReferenceIdx='6' Name='Network Fee'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Benefit Level' ReferenceIdx='7' Name='Benefit Level'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Patient Responsibility' ReferenceIdx='8' Name='Patient Responsibility'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Procedure Code' attr='fulltext' /&gt;&lt;column name='Description of Services' attr='fulltext' /&gt;&lt;column name='Frequency Limit' attr='fulltext' /&gt;&lt;column name='Age Limit' attr='fulltext' /&gt;&lt;column name='Late Date Of Service' attr='fulltext' /&gt;&lt;column name='Deductible' attr='fulltext' /&gt;&lt;column name='Network Fee' attr='fulltext' /&gt;&lt;column name='Benefit Level' attr='fulltext' /&gt;&lt;column name='Patient Responsibility' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,190" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V5">
+                    <uix:NExtractData ContinueOnError="True" DataTable="[newtable]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Procedure Code' ReferenceIdx='0' Name='Procedure Code'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description of Services' ReferenceIdx='1' Name='Description of Services'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Frequency Limit' ReferenceIdx='2' Name='Frequency Limit'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Age Limit' ReferenceIdx='3' Name='Age Limit'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Late Date Of Service' ReferenceIdx='4' Name='Late Date Of Service'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Deductible' ReferenceIdx='5' Name='Deductible'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Network Fee' ReferenceIdx='6' Name='Network Fee'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Benefit Level' ReferenceIdx='7' Name='Benefit Level'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Patient Responsibility' ReferenceIdx='8' Name='Patient Responsibility'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Procedure Code' attr='fulltext' /&gt;&lt;column name='Description of Services' attr='fulltext' /&gt;&lt;column name='Frequency Limit' attr='fulltext' /&gt;&lt;column name='Age Limit' attr='fulltext' /&gt;&lt;column name='Late Date Of Service' attr='fulltext' /&gt;&lt;column name='Deductible' attr='fulltext' /&gt;&lt;column name='Network Fee' attr='fulltext' /&gt;&lt;column name='Benefit Level' attr='fulltext' /&gt;&lt;column name='Patient Responsibility' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V5">
                       <uix:NExtractData.Target>
                         <uix:TargetAnchorable BrowserURL="https://dentalprovider.metlife.com/eligibility/plandetails" ContentHash="M-wpr9EMx0-dKTIBAiCaMQ" DesignTimeRectangle="348, 438, 1226, 338" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="5c7a1dbb-65e8-4ae7-bbe8-1a82f887edda" InformativeScreenshot="28e111b40a67d1810fdf9662f7466d10.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/lHjwDdwCdEmX2utgKzq5dA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
                       </uix:NExtractData.Target>
                     </uix:NExtractData>
-                    <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_34">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[codeToCellMap]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" xml:space="preserve">[New Dictionary(Of String, String) From {
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reset'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="01aecafd-a8b4-4055-9b00-a07de0624795" ContentHash="J-bkGx04yEacrkY8GVCAlw" CvTextArea="1350, 667, 46, 16" CvTextArgument="Reset" CvType="Text" DesignTimeRectangle="1352, 647, 43, 56" ElementType="Text" FullSelectorArgument="&lt;webctrl id='search-procedure-form-reset-link' tag='A' /&gt;" Guid="19ade783-c9e0-41ea-961c-88aa239d8170" InformativeScreenshot="b51acc4197510e80771c8731ff75b24a.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/XcSm9gY_tEiE3mBXtLwIyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="01aecafd-a8b4-4055-9b00-a07de0624795" CvElementArea="1194, 642, 142, 66" CvTextArea="1236, 666, 55, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1200, 647, 130, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' type='button' class='mldc-button search-procedure-form__search-btn primary blue primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Search' /&gt;" Guid="60c69778-b4ea-4195-bde4-f817334fef9c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_34">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[codeToCellMap]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" xml:space="preserve">[New Dictionary(Of String, String) From {
    {"D0120", "E3"},
 {"D0140", "E4"},
 {"D0220", "E5"},
@@ -399,88 +458,109 @@
 {"D9310", "E58"},
 {"D9944", "E59"}
 }]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[newtable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="520,1085" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
-                      <ui:ForEachRow.Body>
-                        <ActivityAction x:TypeArguments="sd:DataRow">
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_37">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[patientCellMap]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" xml:space="preserve">[New Dictionary(Of String, String) From {
+    {"B15", "'"+groupno},
+	  {"B14","'"+ Groupname},
+	    {"B5", Name},
+		{"B12", effective}
+}]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="520,495" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[templatepath]">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,353" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each CurrentItem" sap:VirtualizedContainerService.HintSize="452,293" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[patientCellMap]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                           <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="CurrentItem" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,903" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_67">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="C:\Users\tsp-6\Downloads\newwwww.txt" sap:VirtualizedContainerService.HintSize="484,167" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[CurrentRow(&quot;Frequency Limit&quot;).ToString]" UseDefaultEncoding="False" />
-                            <Assign sap:VirtualizedContainerService.HintSize="484,175" sap2010:WorkflowViewState.IdRef="Assign_35">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="x:String">[freqinfo1]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="x:String">[CurrentRow("Frequency Limit").ToString]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim input As String = freqinfo1.Trim()&#xD;&#xA;&#xD;&#xA;' If the website accidentally merged the benefit % into the frequency text, strip it before matching&#xD;&#xA;input = System.Text.RegularExpressions.Regex.Replace(input, &quot;\s+\d+%$&quot;, &quot;&quot;).Trim()&#xD;&#xA;&#xD;&#xA;input = input.ToUpperInvariant()&#xD;&#xA;&#xD;&#xA;Dim result As String = input&#xD;&#xA;&#xD;&#xA;If String.IsNullOrWhiteSpace(input) OrElse input = &quot;NO LIMITATIONS&quot; OrElse input = &quot;NOT AVAILABLE&quot; Then&#xD;&#xA;    result = &quot;NO FREQ&quot;&#xD;&#xA;&#xD;&#xA;ElseIf input = &quot;*NOT COVERED&quot; OrElse input = &quot;NOT COVERED&quot; Then&#xD;&#xA;    result = &quot;NOT COVERED&quot;&#xD;&#xA;&#xD;&#xA;ElseIf input = &quot;ONCE PER LIFETIME&quot; Then&#xD;&#xA;    result = &quot;1/LT&quot;&#xD;&#xA;&#xD;&#xA;ElseIf input.Contains(&quot;CANNOT CURRENTLY PROVIDE COVERAGE&quot;) Then&#xD;&#xA;    result = &quot;Info N/A&quot;&#xD;&#xA;&#xD;&#xA;Else&#xD;&#xA;    ' &quot;2 TIMES IN 1 CALENDAR YEAR&quot; / &quot;1 TIME IN 7 FISCAL YEARS&quot;&#xD;&#xA;    Dim m1 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+(CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;    If m1.Success Then&#xD;&#xA;        Dim period As String = If(m1.Groups(3).Value.ToUpper().StartsWith(&quot;C&quot;), &quot;CY&quot;, &quot;FY&quot;)&#xD;&#xA;        Dim multiplier As String = If(m1.Groups(2).Value = &quot;1&quot;, &quot;&quot;, m1.Groups(2).Value)&#xD;&#xA;        result = m1.Groups(1).Value &amp; &quot;/&quot; &amp; multiplier &amp; period&#xD;&#xA;&#xD;&#xA;    Else&#xD;&#xA;        ' &quot;1 TIME IN 60 MONTHS&quot;&#xD;&#xA;        Dim m2 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+MONTH(?:S|\(S\))?$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;        If m2.Success Then&#xD;&#xA;            result = m2.Groups(1).Value &amp; &quot;/&quot; &amp; m2.Groups(2).Value &amp; &quot;MO&quot;&#xD;&#xA;&#xD;&#xA;        Else&#xD;&#xA;            ' child / adult split&#xD;&#xA;            Dim m3 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+(?:PER|EVERY)\s+1\s+(CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?\s+FOR\s+(?:CHILDREN|PARTICIPANT\s+TO\s+AGE\s+19),\s+(\d+)\s+(?:PER|EVERY)\s+1\s+(?:CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?\s+FOR\s+ADULTS&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;            If m3.Success Then&#xD;&#xA;                Dim period As String = If(m3.Groups(2).Value.ToUpper().StartsWith(&quot;C&quot;), &quot;CY&quot;, &quot;FY&quot;)&#xD;&#xA;                Dim agePart As String = If(input.Contains(&quot;AGE 19&quot;), &quot;≤19&quot;, &quot;child&quot;)&#xD;&#xA;                result = m3.Groups(1).Value &amp; &quot;/&quot; &amp; period &amp; &quot; &quot; &amp; agePart &amp; &quot;, &quot; &amp; m3.Groups(3).Value &amp; &quot;/&quot; &amp; period &amp; &quot; adult&quot;&#xD;&#xA;&#xD;&#xA;            Else&#xD;&#xA;                ' with restriction after comma - years&#xD;&#xA;                Dim m4 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+(CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?,\s+(.+)$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;                If m4.Success Then&#xD;&#xA;                    Dim period As String = If(m4.Groups(3).Value.ToUpper().StartsWith(&quot;C&quot;), &quot;CY&quot;, &quot;FY&quot;)&#xD;&#xA;                    Dim multiplier As String = If(m4.Groups(2).Value = &quot;1&quot;, &quot;&quot;, m4.Groups(2).Value)&#xD;&#xA;                    Dim note As String = m4.Groups(4).Value&#xD;&#xA;                    note = note.Replace(&quot;PERMANENT&quot;, &quot;&quot;).Replace(&quot;EXCLUDING WISDOM TEETH&quot;, &quot;no wisdom&quot;).Replace(&quot;MOLARS ONLY&quot;, &quot;molars only&quot;).Trim()&#xD;&#xA;                    result = m4.Groups(1).Value &amp; &quot;/&quot; &amp; multiplier &amp; period &amp; &quot;; &quot; &amp; note&#xD;&#xA;&#xD;&#xA;                Else&#xD;&#xA;                    ' with restriction after comma - months&#xD;&#xA;                    Dim m5 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+MONTH(?:S|\(S\))?,\s+(.+)$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;                    If m5.Success Then&#xD;&#xA;                        Dim note As String = m5.Groups(3).Value&#xD;&#xA;                        note = note.Replace(&quot;PERMANENT&quot;, &quot;&quot;).Replace(&quot;EXCLUDING WISDOM TEETH&quot;, &quot;no wisdom&quot;).Replace(&quot;MOLARS ONLY&quot;, &quot;molars only&quot;).Trim()&#xD;&#xA;                        result = m5.Groups(1).Value &amp; &quot;/&quot; &amp; m5.Groups(2).Value &amp; &quot;MO; &quot; &amp; note&#xD;&#xA;                    End If&#xD;&#xA;                End If&#xD;&#xA;            End If&#xD;&#xA;        End If&#xD;&#xA;    End If&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;New_Freq1 = result" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="484,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
-                              <ui:InvokeCode.Arguments>
-                                <InArgument x:TypeArguments="x:String" x:Key="freqInfo1">
-                                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="freqInfo1" />
-                                </InArgument>
-                                <OutArgument x:TypeArguments="x:String" x:Key="New_Freq1">
-                                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="New_Freq1" />
-                                </OutArgument>
-                              </ui:InvokeCode.Arguments>
-                            </ui:InvokeCode>
-                            <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[templatepath]">
-                              <ui:ExcelApplicationScope.Body>
-                                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
-                                  </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_65">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ui:ExcelWriteCell Cell="[If(codeToCellMap.ContainsKey(CurrentRow(&quot;Procedure Code&quot;).ToString.Trim()), codeToCellMap(CurrentRow(&quot;Procedure Code&quot;).ToString.Trim()), &quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1" Text="[New_Freq1 + &quot; &quot; + CurrentRow(&quot;Benefit Level&quot;).ToString]" />
-                                  </Sequence>
-                                </ActivityAction>
-                              </ui:ExcelApplicationScope.Body>
-                            </ui:ExcelApplicationScope>
+                            <ui:ExcelWriteCell Cell="[CurrentItem.Key]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="[CurrentItem.Value]" />
                           </Sequence>
                         </ActivityAction>
-                      </ui:ForEachRow.Body>
-                    </ui:ForEachRow>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reset'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,218" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="216d8f77-26ba-411f-86bf-1d762a61da7a" Version="V5">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="01aecafd-a8b4-4055-9b00-a07de0624795" ContentHash="J-bkGx04yEacrkY8GVCAlw" CvTextArea="1350, 667, 46, 16" CvTextArgument="Reset" CvType="Text" DesignTimeRectangle="1352, 647, 43, 56" ElementType="Text" FullSelectorArgument="&lt;webctrl id='search-procedure-form-reset-link' tag='A' /&gt;" Guid="19ade783-c9e0-41ea-961c-88aa239d8170" InformativeScreenshot="b51acc4197510e80771c8731ff75b24a.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/XcSm9gY_tEiE3mBXtLwIyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                              <uix:Target CVScreenId="01aecafd-a8b4-4055-9b00-a07de0624795" CvElementArea="1194, 642, 142, 66" CvTextArea="1236, 666, 55, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1200, 647, 130, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' type='button' class='mldc-button search-procedure-form__search-btn primary blue primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Search' /&gt;" Guid="60c69778-b4ea-4195-bde4-f817334fef9c" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NClick.Target>
-                      <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NClick.VerifyOptions>
-                    </uix:NClick>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
                   </Sequence>
                 </ActivityAction>
-              </ui:ForEach.Body>
-            </ui:ForEach>
-            <ui:OutputDataTable DataTable="[newtable]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="556,113" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputt]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556,177" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[outputt]" />
-            <Assign sap:VirtualizedContainerService.HintSize="556,175" sap2010:WorkflowViewState.IdRef="Assign_33">
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[newtable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="520,1085" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,903" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="C:\Users\tsp-6\Downloads\newwwww.txt" sap:VirtualizedContainerService.HintSize="484,167" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[CurrentRow(&quot;Frequency Limit&quot;).ToString]" UseDefaultEncoding="False" />
+                    <Assign sap:VirtualizedContainerService.HintSize="484,175" sap2010:WorkflowViewState.IdRef="Assign_35">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[freqinfo1]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow("Frequency Limit").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim input As String = freqinfo1.Trim()&#xD;&#xA;&#xD;&#xA;' If the website accidentally merged the benefit % into the frequency text, strip it before matching&#xD;&#xA;input = System.Text.RegularExpressions.Regex.Replace(input, &quot;\s+\d+%$&quot;, &quot;&quot;).Trim()&#xD;&#xA;&#xD;&#xA;input = input.ToUpperInvariant()&#xD;&#xA;&#xD;&#xA;Dim result As String = input&#xD;&#xA;&#xD;&#xA;If String.IsNullOrWhiteSpace(input) OrElse input = &quot;NO LIMITATIONS&quot; OrElse input = &quot;NOT AVAILABLE&quot; Then&#xD;&#xA;    result = &quot;NO FREQ&quot;&#xD;&#xA;&#xD;&#xA;ElseIf input = &quot;*NOT COVERED&quot; OrElse input = &quot;NOT COVERED&quot; Then&#xD;&#xA;    result = &quot;NOT COVERED&quot;&#xD;&#xA;&#xD;&#xA;ElseIf input = &quot;ONCE PER LIFETIME&quot; Then&#xD;&#xA;    result = &quot;1/LT&quot;&#xD;&#xA;&#xD;&#xA;ElseIf input.Contains(&quot;CANNOT CURRENTLY PROVIDE COVERAGE&quot;) Then&#xD;&#xA;    result = &quot;Info N/A&quot;&#xD;&#xA;&#xD;&#xA;Else&#xD;&#xA;    ' &quot;2 TIMES IN 1 CALENDAR YEAR&quot; / &quot;1 TIME IN 7 FISCAL YEARS&quot;&#xD;&#xA;    Dim m1 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+(CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;    If m1.Success Then&#xD;&#xA;        Dim period As String = If(m1.Groups(3).Value.ToUpper().StartsWith(&quot;C&quot;), &quot;CY&quot;, &quot;FY&quot;)&#xD;&#xA;        Dim multiplier As String = If(m1.Groups(2).Value = &quot;1&quot;, &quot;&quot;, m1.Groups(2).Value)&#xD;&#xA;        result = m1.Groups(1).Value &amp; &quot;/&quot; &amp; multiplier &amp; period&#xD;&#xA;&#xD;&#xA;    Else&#xD;&#xA;        ' &quot;1 TIME IN 60 MONTHS&quot;&#xD;&#xA;        Dim m2 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+MONTH(?:S|\(S\))?$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;        If m2.Success Then&#xD;&#xA;            result = m2.Groups(1).Value &amp; &quot;/&quot; &amp; m2.Groups(2).Value &amp; &quot;MTS&quot;&#xD;&#xA;&#xD;&#xA;        Else&#xD;&#xA;            ' child / adult split&#xD;&#xA;            Dim m3 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+(?:PER|EVERY)\s+1\s+(CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?\s+FOR\s+(?:CHILDREN|PARTICIPANT\s+TO\s+AGE\s+19),\s+(\d+)\s+(?:PER|EVERY)\s+1\s+(?:CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?\s+FOR\s+ADULTS&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;            If m3.Success Then&#xD;&#xA;                Dim period As String = If(m3.Groups(2).Value.ToUpper().StartsWith(&quot;C&quot;), &quot;CY&quot;, &quot;FY&quot;)&#xD;&#xA;                Dim agePart As String = If(input.Contains(&quot;AGE 19&quot;), &quot;≤19&quot;, &quot;child&quot;)&#xD;&#xA;                result = m3.Groups(1).Value &amp; &quot;/&quot; &amp; period &amp; &quot; &quot; &amp; agePart &amp; &quot;, &quot; &amp; m3.Groups(3).Value &amp; &quot;/&quot; &amp; period &amp; &quot; adult&quot;&#xD;&#xA;&#xD;&#xA;            Else&#xD;&#xA;                ' with restriction after comma - years&#xD;&#xA;                Dim m4 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+(CALENDAR|FISCAL)\s+YEAR(?:S|\(S\))?,\s+(.+)$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;                If m4.Success Then&#xD;&#xA;                    Dim period As String = If(m4.Groups(3).Value.ToUpper().StartsWith(&quot;C&quot;), &quot;CY&quot;, &quot;FY&quot;)&#xD;&#xA;                    Dim multiplier As String = If(m4.Groups(2).Value = &quot;1&quot;, &quot;&quot;, m4.Groups(2).Value)&#xD;&#xA;                    Dim note As String = m4.Groups(4).Value&#xD;&#xA;                    note = note.Replace(&quot;PERMANENT&quot;, &quot;&quot;).Replace(&quot;EXCLUDING WISDOM TEETH&quot;, &quot;no wisdom&quot;).Replace(&quot;MOLARS ONLY&quot;, &quot;molars only&quot;).Trim()&#xD;&#xA;                    result = m4.Groups(1).Value &amp; &quot;/&quot; &amp; multiplier &amp; period &amp; &quot;; &quot; &amp; note&#xD;&#xA;&#xD;&#xA;                Else&#xD;&#xA;                    ' with restriction after comma - months&#xD;&#xA;                    Dim m5 = System.Text.RegularExpressions.Regex.Match(input, &quot;^(\d+)\s+TIMES?\s+IN\s+(\d+)\s+MONTH(?:S|\(S\))?,\s+(.+)$&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;                    If m5.Success Then&#xD;&#xA;                        Dim note As String = m5.Groups(3).Value&#xD;&#xA;                        note = note.Replace(&quot;PERMANENT&quot;, &quot;&quot;).Replace(&quot;EXCLUDING WISDOM TEETH&quot;, &quot;no wisdom&quot;).Replace(&quot;MOLARS ONLY&quot;, &quot;molars only&quot;).Trim()&#xD;&#xA;                        result = m5.Groups(1).Value &amp; &quot;/&quot; &amp; m5.Groups(2).Value &amp; &quot;MTS; &quot; &amp; note&#xD;&#xA;                    End If&#xD;&#xA;                End If&#xD;&#xA;            End If&#xD;&#xA;        End If&#xD;&#xA;    End If&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;New_Freq1 = result" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="484,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                      <ui:InvokeCode.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="freqInfo1">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="freqInfo1" />
+                        </InArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="New_Freq1">
+                          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="New_Freq1" />
+                        </OutArgument>
+                      </ui:InvokeCode.Arguments>
+                    </ui:InvokeCode>
+                    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,304" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="[templatepath]">
+                      <ui:ExcelApplicationScope.Body>
+                        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExcelWriteCell Cell="[If(codeToCellMap.ContainsKey(CurrentRow(&quot;Procedure Code&quot;).ToString.Trim()), codeToCellMap(CurrentRow(&quot;Procedure Code&quot;).ToString.Trim()), &quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1" Text="[New_Freq1 + &quot; &quot; + CurrentRow(&quot;Benefit Level&quot;).ToString]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ExcelApplicationScope.Body>
+                    </ui:ExcelApplicationScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:OutputDataTable DataTable="[newtable]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="520,113" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputt]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,177" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[outputt]" />
+            <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_33">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[newFilePath]</OutArgument>
               </Assign.To>
@@ -491,8 +571,8 @@
 )]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:RenameFileX FileResource="{x:Null}" OutputFileResource="{x:Null}" DisplayName="Rename File" FilePath="[templatePath]" sap:VirtualizedContainerService.HintSize="556,223" sap2010:WorkflowViewState.IdRef="RenameFileX_2" KeepExtension="True" NewName="[System.IO.Path.GetFileName(newFilePath)]" />
-            <ugad:GoogleDriveApplicationScope ContinueOnError="{x:Null}" Account="mohammeds@tusksupportpartners.com" ConnectionAccountName="mohammeds@tusksupportpartners.com #2" ConnectionId="ba0aaa90-88ea-4266-bf17-b3d49afb2900" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="556,509" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_2" Timeout="1000" UseConnectionService="True" UserEmail="mohammeds@tusksupportpartners.com">
+            <ui:RenameFileX FileResource="{x:Null}" OutputFileResource="{x:Null}" DisplayName="Rename File" FilePath="[templatePath]" sap:VirtualizedContainerService.HintSize="520,223" sap2010:WorkflowViewState.IdRef="RenameFileX_2" KeepExtension="True" NewName="[System.IO.Path.GetFileName(newFilePath)]" />
+            <ugad:GoogleDriveApplicationScope ContinueOnError="{x:Null}" Account="mohammeds@tusksupportpartners.com" ConnectionAccountName="mohammeds@tusksupportpartners.com #2" ConnectionId="ba0aaa90-88ea-4266-bf17-b3d49afb2900" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="520,509" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_2" Timeout="1000" UseConnectionService="True" UserEmail="mohammeds@tusksupportpartners.com">
               <ugad:GoogleDriveApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                   <ActivityAction.Argument>
@@ -504,7 +584,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uga:UploadFile ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" Convert="False" DisplayName="Upload File" DriveTarget="[GoogleDrive]" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="UploadFile_2" LocalFilePath="[newFilePath]" ParentFolderName="templates" ParentId="https://drive.google.com/drive/folders/1BUNQTjaQaQgVlEMNIGhWB7j6wg0q0MuT?usp=drive_link" ParentIdSelectionMode="Browse" SupportsTeamDrives="False" UpdateExisting="False" />
+                    <uga:UploadFile ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" Convert="False" DisplayName="Upload File" DriveTarget="[GoogleDrive]" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="UploadFile_2" LocalFilePath="[newFilePath]" ParentFolderName="templates" ParentId="https://drive.google.com/drive/folders/1vzvdaqTYq-ubDg7PuTlfQ3r00iPLrhsm?usp=drive_link" ParentIdSelectionMode="EnterId" SupportsTeamDrives="False" UpdateExisting="False" />
                   </Sequence>
                 </ActivityAction>
               </ugad:GoogleDriveApplicationScope.Body>
@@ -519,7 +599,7 @@
                 </InArgument>
               </ugad:GoogleDriveApplicationScope.CredentialSecret>
             </ugad:GoogleDriveApplicationScope>
-            <ui:CopyFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[templatePath1]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="556,217" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[downloadspath]" />
+            <ui:CopyFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[templatePath1]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="520,217" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[downloadspath]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -695,7 +775,7 @@
                       </uix:TargetAnchorable>
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <uix:NGetText DisplayName="Get Text 'DIAGNOSTIC'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,190" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[diagded]" Timeout="10" Version="V5">
+                  <uix:NGetText DisplayName="Get Text 'DIAGNOSTIC'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="664,190" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[diagded]" Timeout="10" Version="V5">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="ea434092-3cb8-4ced-b49f-873bee21a1e8" ContentHash="c0ni20NJcUieoJtkAemp1g" CvType="AnyWordGroup" DesignTimeRectangle="1138, 492, 22, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='in-network-status-0' type='' tag='SPAN' class='mldc-text deductible-label' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d0e18386-f479-41a9-b45d-7d3eb5261149" InformativeScreenshot="99325ca597ce7c8ae6c1f7ce08236051.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/iTza-rmvgkWuj9LZg56RVQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -706,7 +786,7 @@
                       </uix:TargetAnchorable>
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <uix:NGetText DisplayName="Get Text 'RESTORATIVE'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,190" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[restorded]" Timeout="10" Version="V5">
+                  <uix:NGetText DisplayName="Get Text 'RESTORATIVE'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="664,190" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[restorded]" Timeout="10" Version="V5">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="6f9d9e3f-d2e2-43ae-a626-349a322cd2cc" ContentHash="cvi9BW2Y_UizzONOnJYn-w" CvType="AnyWordGroup" DesignTimeRectangle="1138, 738, 25, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='in-network-status-2' type='' tag='SPAN' class='mldc-text deductible-label' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="82ce495b-aa12-4d99-a3ca-521f58a1cd15" InformativeScreenshot="c4d91d1b8276e1ec193dca85b71265d5.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/SN5ZCEv72EKIdfWJEZ4UnQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -717,7 +797,7 @@
                       </uix:TargetAnchorable>
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <uix:NGetText DisplayName="Get Text 'ENDODONTICS'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,190" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[endoded]" Timeout="10" Version="V5">
+                  <uix:NGetText DisplayName="Get Text 'ENDODONTICS'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="664,190" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[endoded]" Timeout="10" Version="V5">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="d67bc8f3-6f71-4a80-b0ed-97cda2cf0468" ContentHash="WZoEYMvtMUuHgDrJmOKISg" CvType="AnyWordGroup" DesignTimeRectangle="1138, 861, 25, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='in-network-status-3' type='' tag='SPAN' class='mldc-text deductible-label' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d4ae5693-8f73-4ff4-b667-1becc0ad881d" InformativeScreenshot="263ad79410d0fbc79375e6c6597c5d92.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/xDsnY3EolUy5th80TrKi8w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -728,7 +808,7 @@
                       </uix:TargetAnchorable>
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'PERIODONTICS'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,190" sap2010:WorkflowViewState.IdRef="NGetText_28" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[perioded]" Timeout="10" Version="V5">
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'PERIODONTICS'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="664,190" sap2010:WorkflowViewState.IdRef="NGetText_28" ScopeIdentifier="71120509-9246-4b19-adf1-b9bffc824a63" TextString="[perioded]" Timeout="10" Version="V5">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="9aaf8282-8915-41c7-9216-adfcd67f1d40" ContentHash="0uUDhlmeqkWQdhlBUJyAQA" CvType="AnyWordGroup" DesignTimeRectangle="1138, 684, 25, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='in-network-status-4' type='' tag='SPAN' class='mldc-text deductible-label' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="28ea920f-1aef-4820-af06-2bd7743d9c17" InformativeScreenshot="9565df4066682341b30fee7e7f5f9f88.png" Reference="HfpXd8PAP0-g1WPbIpNi2Q/uKKCJ8a240Kh0FcrPLzagg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                         <uix:TargetAnchorable.Anchors>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Employer  Group #",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "kgej63u_d0mW_w7O9BDFYg",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/kgej63u_d0mW_w7O9BDFYg",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/At2Q4-RRXkWvrGKgG4sFQQ",
+  "Created": "2026-09-15T17:04:28.7283996Z",
+  "Updated": "2026-09-15T17:04:28.7283996Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

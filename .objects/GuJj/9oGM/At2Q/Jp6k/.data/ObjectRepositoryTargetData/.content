@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9VuzySnah0qogoYbZGiWZA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="5d228808-08cd-4d55-b906-91a92ab791fa" CvElementArea="1198, 645, 134, 60" CvTextArea="1236, 666, 55, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1200, 647, 130, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' type='button' class='mldc-button search-procedure-form__search-btn primary blue primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Search' /&gt;" Guid="81fafebd-9694-4a5f-8f5f-2c683a0baae6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5d228808-08cd-4d55-b906-91a92ab791fa" CvElementArea="557, 640, 628, 66" CvType="InputBox" DesignTimeRectangle="558, 642, 626, 64" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='input-group' parentid='app' tag='DIV' /&gt;" Guid="f56e8b06-eadb-456a-98e0-397d042dc36e" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3388d95659a486bc2b3487900caee1ae.png" xmlns="">0GwkrX07ETEmtKQw3g6CjWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

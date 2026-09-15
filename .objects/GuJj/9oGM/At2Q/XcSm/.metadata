@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Reset",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "XcSm9gY_tEiE3mBXtLwIyw",
+  "Reference": "HfpXd8PAP0-g1WPbIpNi2Q/XcSm9gY_tEiE3mBXtLwIyw",
+  "ParentRef": "HfpXd8PAP0-g1WPbIpNi2Q/At2Q4-RRXkWvrGKgG4sFQQ",
+  "Created": "2026-09-15T13:36:11.699559Z",
+  "Updated": "2026-09-15T13:36:11.699559Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

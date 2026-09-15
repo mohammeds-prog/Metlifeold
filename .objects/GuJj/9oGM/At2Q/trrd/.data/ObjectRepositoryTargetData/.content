@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PN66S1ch10aYz76m7pvRJw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="7143628a-7a07-427f-b1d0-31fd1e46eb08" CvElementArea="557, 640, 628, 66" CvType="InputBox" DesignTimeRectangle="558, 642, 626, 64" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='input-group' parentid='app' tag='DIV' type='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a8f2596d-9e68-4f7e-8a87-c0ab0425fe56" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7143628a-7a07-427f-b1d0-31fd1e46eb08" CvElementArea="1198, 645, 134, 60" CvTextArea="1236, 666, 55, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1200, 647, 130, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' type='button' class='mldc-button search-procedure-form__search-btn primary blue primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Search' /&gt;" Guid="5ab113f9-1a69-4bf9-9e3d-0e84e66635cc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="db179f647b5832f06e34154da90b6635.png" xmlns="">0UKH2wNySp0KYpJw6kwvLfw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

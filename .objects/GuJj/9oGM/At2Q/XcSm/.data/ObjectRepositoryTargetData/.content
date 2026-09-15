@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="J-bkGx04yEacrkY8GVCAlw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="01aecafd-a8b4-4055-9b00-a07de0624795" CvTextArea="1350, 667, 46, 16" CvTextArgument="Reset" CvType="Text" DesignTimeRectangle="1352, 647, 43, 56" ElementType="Text" FullSelectorArgument="&lt;webctrl id='search-procedure-form-reset-link' tag='A' /&gt;" Guid="19ade783-c9e0-41ea-961c-88aa239d8170" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="01aecafd-a8b4-4055-9b00-a07de0624795" CvElementArea="1194, 642, 142, 66" CvTextArea="1236, 666, 55, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1200, 647, 130, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' type='button' class='mldc-button search-procedure-form__search-btn primary blue primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Search' /&gt;" Guid="60c69778-b4ea-4195-bde4-f817334fef9c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b51acc4197510e80771c8731ff75b24a.png" xmlns="">0D7bNhoq1gUWjUB9FrPlbYw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

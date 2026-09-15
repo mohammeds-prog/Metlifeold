@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bYX1hu-kJk6vhd88gqCLSw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalprovider.metlife.com/eligibility/plandetails" CVScreenId="00ef641e-1b46-418b-92b4-57aab1e8a4be" CvElementArea="568, 573, 29, 27" CvType="ArrowButton" DesignTimeRectangle="354, 572, 239, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" Guid="31332a02-4457-4903-b537-8c7853cbd162" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MetDental' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="00ef641e-1b46-418b-92b4-57aab1e8a4be" CvElementArea="654, 486, 78, 34" CvTextArea="668, 496, 49, 14" CvTextArgument="Active" CvType="Button" DesignTimeRectangle="656, 488, 75, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Active' parentid='app' tag='SPAN' type='' class='status-badge active' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Active' /&gt;" Guid="6cea1087-a9ea-46c3-9750-bf944550a177" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="815247d7e94df8d0ce110064dc17693d.png" xmlns="">0fOs5nCoir0-YN3aec3lY_g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
